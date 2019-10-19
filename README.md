@@ -49,3 +49,27 @@ Bits par échantillon : 32
 
 [Radio France AAC.xml.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746875/Radio.France.AAC.xml.TXT) *(télécharger le fichier et retirer le suffixe `.txt` du nom du fichier avant importation)*
 
+### Python Web Scraping
+
+```
+# coding=utf8
+# the above tag defines encoding for this document and is for Python 2.x compatibility
+
+import re
+
+regex = r"(?P<link>http[^\"]*?/(?P<title>[^\.]*?)\.aac\?id=radiofrance)"
+
+test_str = ("<copy-paste here HTML source code from: https://www.francemusique.fr>")
+
+subst = ""
+
+# You can manually specify the number of replacements by changing the 4th argument
+result = re.sub(regex, subst, test_str, 0)
+
+if result:
+    print (result)
+
+# Note: for Python 2.7 compatibility, use ur"" to prefix the regex and u"" to prefix the test string and substitution.
+```
+
+*[France Musique .AAC link scraping on Regex101](https://regex101.com/r/QzFpaY/1)*
