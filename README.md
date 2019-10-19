@@ -12,16 +12,31 @@ Fréquence d'échantillonnage : 48000 Hz
 Bits par échantillon : 32
 ```
 
+### France Musique :
 
-### France Culture
-https://chai5she.cdn.dvmr.fr/franceculture-hifi.aac?ID=radiofrance
+https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance
 
-### France Musique
-https://chai5she.cdn.dvmr.fr/francemusique-hifi.aac?ID=radiofrance
 
-### FiP
-https://chai5she.cdn.dvmr.fr/fip-hifi.aac?ID=radiofrance
+### FiP :
 
-### FiP La Jazz
-https://chai5she.cdn.dvmr.fr/fip-webradio2.aac?ID=radiofrance
+https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance
 
+
+### France Culture, France Inter...
+
+https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance
+https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance
