@@ -47,7 +47,9 @@ Bits par échantillon : 32
 
 ![itunes-export-playlist](https://user-images.githubusercontent.com/8126807/67147939-06886c00-f29a-11e9-85a9-1b902c30ef73.jpg)
 
-[Radio France AAC.xml.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746875/Radio.France.AAC.xml.TXT) *(télécharger le fichier et retirer le suffixe `.txt` du nom du fichier avant importation)*
+[Radio France AAC.xml.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746923/Radio.France.AAC.xml.TXT)
+[Radio France AAC.m3u8.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746929/Radio.France.AAC.m3u8.TXT)
+*télécharger le fichier et retirer le suffixe `.txt` du nom du fichier avant importation*
 
 ### Python Web Scraping
 
