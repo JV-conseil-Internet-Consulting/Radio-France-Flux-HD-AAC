@@ -40,3 +40,13 @@ https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance
 
 https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance
 https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance
+
+### iTunes Playlist Import/Export in XML format
+
+`Fichier > Bibliothèque > Exporter la playlist... > Format XML`
+
+![itunes-export-playlist](https://user-images.githubusercontent.com/8126807/67147939-06886c00-f29a-11e9-85a9-1b902c30ef73.jpg)
+
+[Radio France AAC.xml.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746875/Radio.France.AAC.xml.TXT)
+*télécharger le fichier et retirer le suffixe `.txt` du nom du fichier avant importation*
+
