@@ -14,32 +14,32 @@ Bits par échantillon : 32
 
 ### France Musique :
 
-https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance
 
 
 ### FiP :
 
-https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance
 
 
 ### France Culture, France Inter...
 
-https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance
-https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance
+- https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance
 
 ### iTunes Playlist Import/Export in XML format
 
