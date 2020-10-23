@@ -9,9 +9,7 @@
 ![Radio-France-Flux-HD-AAC-2](https://user-images.githubusercontent.com/8126807/67148713-d72a2d00-f2a2-11e9-8050-83de5ed8c15f.png)
 ![Radio-France-Flux-HD-AAC-1](https://user-images.githubusercontent.com/8126807/67148712-d72a2d00-f2a2-11e9-8e51-0155fc8b9b18.png)
 
-
-
-```
+```bash
 Canaux : Stéréo
 Fréquence d'échantillonnage : 48000 Hz
 Bits par échantillon : 32
@@ -28,7 +26,6 @@ Bits par échantillon : 32
 - https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance
 - https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance
 
-
 ### FiP :
 
 - https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance
@@ -39,7 +36,6 @@ Bits par échantillon : 32
 - https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance
 - https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance
 - https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance
-
 
 ### France Culture, France Inter...
 
@@ -52,17 +48,14 @@ Bits par échantillon : 32
 
 ![itunes-export-playlist](https://user-images.githubusercontent.com/8126807/67147939-06886c00-f29a-11e9-85a9-1b902c30ef73.jpg)
 
-
-
-
-
 #### Télécharger le fichier et retirer le suffixe `.txt` du nom du fichier avant importation:
+
 - [Radio France AAC.xml.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746923/Radio.France.AAC.xml.TXT)
 - [Radio France AAC.m3u8.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746929/Radio.France.AAC.m3u8.TXT)
 
 ### Python Web Scraping
 
-```
+```py
 # coding=utf8
 # the above tag defines encoding for this document and is for Python 2.x compatibility
 
@@ -78,9 +71,13 @@ subst = ""
 result = re.sub(regex, subst, test_str, 0)
 
 if result:
-    print (result)
+    print(result)
 
 # Note: for Python 2.7 compatibility, use ur"" to prefix the regex and u"" to prefix the test string and substitution.
 ```
 
 *[France Musique .AAC link scraping on Regex101](https://regex101.com/r/QzFpaY/1)*
+
+### Open API de Radio France
+
+> L’Open API de Radio France est un portail qui permet à des acteurs innovants de développer de nouveaux services grâce à un accès raisonné aux contenus de Radio France. — https://www.radiofrance.fr/lopen-api-radio-france
