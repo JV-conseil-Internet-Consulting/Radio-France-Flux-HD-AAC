@@ -66,14 +66,15 @@ import json
 import requests
 import re
 
-regex = r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\-hifi\.aac\?id=radiofrance)"
-
 pages = [
     "https://www.francemusique.fr",
     "https://www.franceculture.fr",
     "https://www.franceinter.fr",
     "https://www.fip.fr",
 ]
+
+# Regex source: https://regex101.com/r/QzFpaY/1
+regex = r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\-hifi\.aac\?id=radiofrance)"
 
 links = {}
 
@@ -85,7 +86,12 @@ for p in pages:
     except Exception as e:
         print(e)
 
+# JSON View
 print(json.dumps(links, indent=1, ensure_ascii=False))
+
+# Markdown View
+for x, y in links.items():
+    print("- [%s](%s)" % (x, y))
 ```
 
 *[France Musique .AAC link scraping on Regex101](https://regex101.com/r/QzFpaY/1)*

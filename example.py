@@ -5,14 +5,15 @@ import json
 import requests
 import re
 
-regex = r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\-hifi\.aac\?id=radiofrance)"
-
 pages = [
     "https://www.francemusique.fr",
     "https://www.franceculture.fr",
     "https://www.franceinter.fr",
     "https://www.fip.fr",
 ]
+
+# Regex source: https://regex101.com/r/QzFpaY/1
+regex = r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\-hifi\.aac\?id=radiofrance)"
 
 links = {}
 
