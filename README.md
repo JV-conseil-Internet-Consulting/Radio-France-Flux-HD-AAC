@@ -59,7 +59,7 @@ Bits par échantillon : 32
 ### Python Web Scraping
 
 ```py
-# coding=utf8
+#!/usr/bin/env python3
 # pip3 install requests
 
 import json
@@ -87,11 +87,22 @@ for p in pages:
         print(e)
 
 # JSON View
+print()
+print("# JSON View")
 print(json.dumps(links, indent=1, ensure_ascii=False))
 
 # Markdown View
+print()
+print("# Markdown View")
 for x, y in links.items():
     print("- [%s](%s)" % (x, y))
+
+# M3U View
+print()
+print("#EXTM3U")
+for x, y in links.items():
+    print("#EXTINF:0,Radio France HiFi - %s\r\n%s" % (x, y))
+print()
 ```
 
 *[France Musique .AAC link scraping on Regex101](https://regex101.com/r/QzFpaY/1)*
