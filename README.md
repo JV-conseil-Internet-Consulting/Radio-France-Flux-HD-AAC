@@ -17,30 +17,33 @@ Bits par échantillon : 32
 
 ### France Musique :
 
-- https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance
+- [francemusiqueeasyclassique](https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance)
+- [francemusiqueopera](https://icecast.radiofrance.fr/francemusiqueopera-hifi.aac?id=radiofrance)
+- [francemusiquebaroque](https://icecast.radiofrance.fr/francemusiquebaroque-hifi.aac?id=radiofrance)
+- [francemusiqueclassiqueplus](https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance)
+- [francemusiqueconcertsradiofrance](https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance)
+- [francemusiquelajazz](https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance)
+- [francemusiquelacontemporaine](https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance)
+- [francemusiqueocoramonde](https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance)
+- [francemusiquelabo](https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance)
+- [francemusique](https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance)
 
 ### FiP :
 
-- https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance
+- [fiprock](https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance)
+- [fipjazz](https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance)
+- [fipgroove](https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance)
+- [fippop](https://icecast.radiofrance.fr/fippop-hifi.aac?id=radiofrance)
+- [fipelectro](https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance)
+- [fipworld](https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance)
+- [fipreggae](https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance)
+- [fipnouveautes](https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance)
+- [fip](https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance)
 
 ### France Culture, France Inter...
 
-- https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance
-- https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance
+- [franceculture](https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance)
+- [franceinter](https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance)
 
 ### iTunes Playlist Import/Export in XML format
 

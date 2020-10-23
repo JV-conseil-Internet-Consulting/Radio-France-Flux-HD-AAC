@@ -24,4 +24,9 @@ for p in pages:
     except Exception as e:
         print(e)
 
+# JSON View
 print(json.dumps(links, indent=1, ensure_ascii=False))
+
+# Markdown View
+for x, y in links.items():
+    print("- [%s](%s)" % (x, y))
