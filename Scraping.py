@@ -38,6 +38,9 @@ print("\r\n# Markdown View\r\n")
 for x, y in links["aac"].items():
     print("- [%s](%s)" % (x, y))
 
+for x, y in links["mp3"].items():
+    print("- %s: %s" % (x, y))
+
 # M3U View
 print("\r\n#EXTM3U")
 for x, y in links["aac"].items():
