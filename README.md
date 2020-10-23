@@ -57,26 +57,61 @@ Bits par échantillon : 32
 
 ```py
 # coding=utf8
-# the above tag defines encoding for this document and is for Python 2.x compatibility
+# pip3 install requests
 
+import json
+import requests
 import re
 
-regex = r"(?P<link>http[^\"]*?/(?P<title>[^\.]*?)\.aac\?id=radiofrance)"
+regex = r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\-hifi\.aac\?id=radiofrance)"
 
-test_str = ("<copy-paste here HTML source code from: https://www.francemusique.fr>")
+pages = [
+    "https://www.francemusique.fr",
+    "https://www.franceculture.fr",
+    "https://www.franceinter.fr",
+    "https://www.fip.fr",
+]
 
-subst = ""
+links = {}
 
-# You can manually specify the number of replacements by changing the 4th argument
-result = re.sub(regex, subst, test_str, 0)
+for p in pages:
+    try:
+        response = requests.get(p)
+        result = re.findall(regex, response.text, 0)
+        links.update({y: x for x, y in result})
+    except Exception as e:
+        print(e)
 
-if result:
-    print(result)
-
-# Note: for Python 2.7 compatibility, use ur"" to prefix the regex and u"" to prefix the test string and substitution.
+print(json.dumps(links, indent=1, ensure_ascii=False))
 ```
 
 *[France Musique .AAC link scraping on Regex101](https://regex101.com/r/QzFpaY/1)*
+
+```json
+{
+ "francemusiqueeasyclassique": "https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance",
+ "francemusiqueopera": "https://icecast.radiofrance.fr/francemusiqueopera-hifi.aac?id=radiofrance",
+ "francemusiquebaroque": "https://icecast.radiofrance.fr/francemusiquebaroque-hifi.aac?id=radiofrance",
+ "francemusiqueclassiqueplus": "https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance",
+ "francemusiqueconcertsradiofrance": "https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance",
+ "francemusiquelajazz": "https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance",
+ "francemusiquelacontemporaine": "https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance",
+ "francemusiqueocoramonde": "https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance",
+ "francemusiquelabo": "https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance",
+ "francemusique": "https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance",
+ "franceculture": "https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance",
+ "franceinter": "https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance",
+ "fiprock": "https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance",
+ "fipjazz": "https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance",
+ "fipgroove": "https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance",
+ "fippop": "https://icecast.radiofrance.fr/fippop-hifi.aac?id=radiofrance",
+ "fipelectro": "https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance",
+ "fipworld": "https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance",
+ "fipreggae": "https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance",
+ "fipnouveautes": "https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance",
+ "fip": "https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance"
+}
+```
 
 ### Open API de Radio France
 
