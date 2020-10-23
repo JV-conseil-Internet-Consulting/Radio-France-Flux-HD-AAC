@@ -1,4 +1,4 @@
-# coding=utf8
+#!/usr/bin/env python3
 # pip3 install requests
 
 import json
@@ -26,8 +26,10 @@ for p in pages:
         print(e)
 
 # JSON View
+print("# JSON View")
 print(json.dumps(links, indent=1, ensure_ascii=False))
 
 # Markdown View
+print("# Markdown View")
 for x, y in links.items():
     print("- [%s](%s)" % (x, y))
