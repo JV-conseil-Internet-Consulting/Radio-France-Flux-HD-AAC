@@ -74,15 +74,18 @@ pages = [
 ]
 
 # Regex source: https://regex101.com/r/QzFpaY/1
-regex = r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\-hifi\.aac\?id=radiofrance)"
+rgxaac = r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\-hifi\.aac\?id=radiofrance)"
+rgxmp3 = r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\.mp3\?id=radiofrance)"
 
-links = {}
+links = {"aac": {}, "mp3": {}}
 
 for p in pages:
     try:
         response = requests.get(p)
-        result = re.findall(regex, response.text, 0)
-        links.update({y: x for x, y in result})
+        result = re.findall(rgxaac, response.text, 0)
+        links["aac"].update({y: x for x, y in result})
+        result = re.findall(rgxmp3, response.text, 0)
+        links["mp3"].update({y: x for x, y in result})
     except Exception as e:
         print(e)
 
@@ -94,13 +97,13 @@ print(json.dumps(links, indent=1, ensure_ascii=False))
 # Markdown View
 print()
 print("# Markdown View")
-for x, y in links.items():
+for x, y in links["aac"].items():
     print("- [%s](%s)" % (x, y))
 
 # M3U View
 print()
 print("#EXTM3U")
-for x, y in links.items():
+for x, y in links["aac"].items():
     print("#EXTINF:0,Radio France HiFi - %s\r\n%s" % (x, y))
 print()
 ```
@@ -109,27 +112,61 @@ print()
 
 ```json
 {
- "francemusiqueeasyclassique": "https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance",
- "francemusiqueopera": "https://icecast.radiofrance.fr/francemusiqueopera-hifi.aac?id=radiofrance",
- "francemusiquebaroque": "https://icecast.radiofrance.fr/francemusiquebaroque-hifi.aac?id=radiofrance",
- "francemusiqueclassiqueplus": "https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance",
- "francemusiqueconcertsradiofrance": "https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance",
- "francemusiquelajazz": "https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance",
- "francemusiquelacontemporaine": "https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance",
- "francemusiqueocoramonde": "https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance",
- "francemusiquelabo": "https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance",
- "francemusique": "https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance",
- "franceculture": "https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance",
- "franceinter": "https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance",
- "fiprock": "https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance",
- "fipjazz": "https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance",
- "fipgroove": "https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance",
- "fippop": "https://icecast.radiofrance.fr/fippop-hifi.aac?id=radiofrance",
- "fipelectro": "https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance",
- "fipworld": "https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance",
- "fipreggae": "https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance",
- "fipnouveautes": "https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance",
- "fip": "https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance"
+ "aac": {
+  "francemusiqueeasyclassique": "https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance",
+  "francemusiqueopera": "https://icecast.radiofrance.fr/francemusiqueopera-hifi.aac?id=radiofrance",
+  "francemusiquebaroque": "https://icecast.radiofrance.fr/francemusiquebaroque-hifi.aac?id=radiofrance",
+  "francemusiqueclassiqueplus": "https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance",
+  "francemusiqueconcertsradiofrance": "https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance",
+  "francemusiquelajazz": "https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance",
+  "francemusiquelacontemporaine": "https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance",
+  "francemusiqueocoramonde": "https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance",
+  "francemusiquelabo": "https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance",
+  "francemusique": "https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance",
+  "franceculture": "https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance",
+  "franceinter": "https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance",
+  "fiprock": "https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance",
+  "fipjazz": "https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance",
+  "fipgroove": "https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance",
+  "fippop": "https://icecast.radiofrance.fr/fippop-hifi.aac?id=radiofrance",
+  "fipelectro": "https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance",
+  "fipworld": "https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance",
+  "fipreggae": "https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance",
+  "fipnouveautes": "https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance",
+  "fip": "https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance"
+ },
+ "mp3": {
+  "francemusiqueeasyclassique-midfi": "https://icecast.radiofrance.fr/francemusiqueeasyclassique-midfi.mp3?id=radiofrance",
+  "francemusiqueopera-midfi": "https://icecast.radiofrance.fr/francemusiqueopera-midfi.mp3?id=radiofrance",
+  "francemusiquebaroque-midfi": "https://icecast.radiofrance.fr/francemusiquebaroque-midfi.mp3?id=radiofrance",
+  "francemusiqueclassiqueplus-midfi": "https://icecast.radiofrance.fr/francemusiqueclassiqueplus-midfi.mp3?id=radiofrance",
+  "francemusiqueconcertsradiofrance-midfi": "https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-midfi.mp3?id=radiofrance",
+  "francemusiquelajazz-midfi": "https://icecast.radiofrance.fr/francemusiquelajazz-midfi.mp3?id=radiofrance",
+  "francemusiquelacontemporaine-midfi": "https://icecast.radiofrance.fr/francemusiquelacontemporaine-midfi.mp3?id=radiofrance",
+  "francemusiqueocoramonde-midfi": "https://icecast.radiofrance.fr/francemusiqueocoramonde-midfi.mp3?id=radiofrance",
+  "francemusiquelabo-midfi": "https://icecast.radiofrance.fr/francemusiquelabo-midfi.mp3?id=radiofrance",
+  "francemusique-lofi": "https://icecast.radiofrance.fr/francemusique-lofi.mp3?id=radiofrance",
+  "francemusique-midfi": "https://icecast.radiofrance.fr/francemusique-midfi.mp3?id=radiofrance",
+  "franceculture-midfi": "https://icecast.radiofrance.fr/franceculture-midfi.mp3?id=radiofrance",
+  "franceinter-midfi": "https://icecast.radiofrance.fr/franceinter-midfi.mp3?id=radiofrance",
+  "franceinter-lofi": "https://icecast.radiofrance.fr/franceinter-lofi.mp3?id=radiofrance",
+  "fiprock-midfi": "https://icecast.radiofrance.fr/fiprock-midfi.mp3?id=radiofrance",
+  "fipjazz-midfi": "https://icecast.radiofrance.fr/fipjazz-midfi.mp3?id=radiofrance",
+  "fipgroove-midfi": "https://icecast.radiofrance.fr/fipgroove-midfi.mp3?id=radiofrance",
+  "fippop-midfi": "https://icecast.radiofrance.fr/fippop-midfi.mp3?id=radiofrance",
+  "fipelectro-midfi": "https://icecast.radiofrance.fr/fipelectro-midfi.mp3?id=radiofrance",
+  "fipworld-midfi": "https://icecast.radiofrance.fr/fipworld-midfi.mp3?id=radiofrance",
+  "fipreggae-midfi": "https://icecast.radiofrance.fr/fipreggae-midfi.mp3?id=radiofrance",
+  "fipnouveautes-midfi": "https://icecast.radiofrance.fr/fipnouveautes-midfi.mp3?id=radiofrance",
+  "fip-lofi": "https://icecast.radiofrance.fr/fip-lofi.mp3?id=radiofrance",
+  "fip-midfi": "https://icecast.radiofrance.fr/fip-midfi.mp3?id=radiofrance",
+  "fipbordeaux-lofi": "https://icecast.radiofrance.fr/fipbordeaux-lofi.mp3?id=radiofrance",
+  "fipbordeaux-midfi": "https://icecast.radiofrance.fr/fipbordeaux-midfi.mp3?id=radiofrance",
+  "fipnantes-lofi": "https://icecast.radiofrance.fr/fipnantes-lofi.mp3?id=radiofrance",
+  "fipnantes-midfi": "https://icecast.radiofrance.fr/fipnantes-midfi.mp3?id=radiofrance",
+  "fipstrasbourg-lofi": "https://icecast.radiofrance.fr/fipstrasbourg-lofi.mp3?id=radiofrance",
+  "fipstrasbourg-midfi": "https://icecast.radiofrance.fr/fipstrasbourg-midfi.mp3?id=radiofrance"
+ }
 }
 ```
 
