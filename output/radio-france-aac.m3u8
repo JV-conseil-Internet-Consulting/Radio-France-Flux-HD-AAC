@@ -1,4 +1,8 @@
 #EXTM3U
+#EXTINF:0,Radio France HiFi - franceculture
+https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - franceinter
+https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance
 #EXTINF:0,Radio France HiFi - francemusiqueeasyclassique
 https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance
 #EXTINF:0,Radio France HiFi - francemusiqueopera
@@ -19,10 +23,6 @@ https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance
 https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance
 #EXTINF:0,Radio France HiFi - francemusique
 https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance
-#EXTINF:0,Radio France HiFi - franceculture
-https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance
-#EXTINF:0,Radio France HiFi - franceinter
-https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance
 #EXTINF:0,Radio France HiFi - fiprock
 https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance
 #EXTINF:0,Radio France HiFi - fipjazz

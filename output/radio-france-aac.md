@@ -2,6 +2,8 @@
 
 ## aac:
 
+- [franceculture](https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance)
+- [franceinter](https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance)
 - [francemusiqueeasyclassique](https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance)
 - [francemusiqueopera](https://icecast.radiofrance.fr/francemusiqueopera-hifi.aac?id=radiofrance)
 - [francemusiquebaroque](https://icecast.radiofrance.fr/francemusiquebaroque-hifi.aac?id=radiofrance)
@@ -12,8 +14,6 @@
 - [francemusiqueocoramonde](https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance)
 - [francemusiquelabo](https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance)
 - [francemusique](https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance)
-- [franceculture](https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance)
-- [franceinter](https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance)
 - [fiprock](https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance)
 - [fipjazz](https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance)
 - [fipgroove](https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance)
@@ -26,6 +26,9 @@
 
 ## mp3:
 
+- [franceculture-midfi](https://icecast.radiofrance.fr/franceculture-midfi.mp3?id=radiofrance)
+- [franceinter-midfi](https://icecast.radiofrance.fr/franceinter-midfi.mp3?id=radiofrance)
+- [franceinter-lofi](https://icecast.radiofrance.fr/franceinter-lofi.mp3?id=radiofrance)
 - [francemusiqueeasyclassique-midfi](https://icecast.radiofrance.fr/francemusiqueeasyclassique-midfi.mp3?id=radiofrance)
 - [francemusiqueopera-midfi](https://icecast.radiofrance.fr/francemusiqueopera-midfi.mp3?id=radiofrance)
 - [francemusiquebaroque-midfi](https://icecast.radiofrance.fr/francemusiquebaroque-midfi.mp3?id=radiofrance)
@@ -37,9 +40,6 @@
 - [francemusiquelabo-midfi](https://icecast.radiofrance.fr/francemusiquelabo-midfi.mp3?id=radiofrance)
 - [francemusique-lofi](https://icecast.radiofrance.fr/francemusique-lofi.mp3?id=radiofrance)
 - [francemusique-midfi](https://icecast.radiofrance.fr/francemusique-midfi.mp3?id=radiofrance)
-- [franceculture-midfi](https://icecast.radiofrance.fr/franceculture-midfi.mp3?id=radiofrance)
-- [franceinter-midfi](https://icecast.radiofrance.fr/franceinter-midfi.mp3?id=radiofrance)
-- [franceinter-lofi](https://icecast.radiofrance.fr/franceinter-lofi.mp3?id=radiofrance)
 - [fiprock-midfi](https://icecast.radiofrance.fr/fiprock-midfi.mp3?id=radiofrance)
 - [fipjazz-midfi](https://icecast.radiofrance.fr/fipjazz-midfi.mp3?id=radiofrance)
 - [fipgroove-midfi](https://icecast.radiofrance.fr/fipgroove-midfi.mp3?id=radiofrance)

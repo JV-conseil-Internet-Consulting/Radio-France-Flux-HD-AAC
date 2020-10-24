@@ -15,9 +15,9 @@ class ScrapRadioFrance():
 
     def __init__(self, pages=[], regex={}, filename="radio-france-aac"):
         self.pages = pages if pages else [
-            "https://www.francemusique.fr",
             "https://www.franceculture.fr",
             "https://www.franceinter.fr",
+            "https://www.francemusique.fr",
             "https://www.fip.fr"
         ]
         self.regex = regex if regex else {  # Regex source: https://regex101.com/r/QzFpaY/1
