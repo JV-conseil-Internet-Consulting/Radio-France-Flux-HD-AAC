@@ -26,8 +26,6 @@
             const n = data.aac.length
             $.each(data.aac, function (title, uri) {
                 // console.log(uri)
-                // cards += '<div class="col-sm-' + n + '"><div class="card text-center"><img src="..." class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">' + title + '</h5><audio preload="true" controls="controls"><source src="' + uri + '"></audio></div></div></div>'
-                // cards += '<div class="carousel-item"><h5 class="card-title">' + title + '</h5><audio preload="true" controls="controls"><source src="' + uri + '"></audio></div>'
                 cards += '<li class="list-group-item d-flex justify-content-between align-items-center"><b>' + title + '</b> <audio preload="true" controls="controls"><source src="' + uri + '"></audio></li>'
             })
             $('.list-group').html(cards)
