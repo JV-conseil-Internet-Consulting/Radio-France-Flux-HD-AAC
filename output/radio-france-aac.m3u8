@@ -1,0 +1,43 @@
+#EXTM3U
+#EXTINF:0,Radio France HiFi - francemusiqueeasyclassique
+https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - francemusiqueopera
+https://icecast.radiofrance.fr/francemusiqueopera-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - francemusiquebaroque
+https://icecast.radiofrance.fr/francemusiquebaroque-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - francemusiqueclassiqueplus
+https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - francemusiqueconcertsradiofrance
+https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - francemusiquelajazz
+https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - francemusiquelacontemporaine
+https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - francemusiqueocoramonde
+https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - francemusiquelabo
+https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - francemusique
+https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - franceculture
+https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - franceinter
+https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - fiprock
+https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - fipjazz
+https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - fipgroove
+https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - fippop
+https://icecast.radiofrance.fr/fippop-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - fipelectro
+https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - fipworld
+https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - fipreggae
+https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - fipnouveautes
+https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance
+#EXTINF:0,Radio France HiFi - fip
+https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance
