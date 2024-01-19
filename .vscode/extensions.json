@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "bierner.emojisense",
+    "charliermarsh.ruff",
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "foxundermoon.shell-format",
+    "ms-python.black-formatter",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "xabikos.javascriptsnippets",
+    "yzhang.markdown-all-in-one",
+  ]
+}

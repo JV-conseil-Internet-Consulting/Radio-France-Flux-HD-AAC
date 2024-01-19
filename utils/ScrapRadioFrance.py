@@ -1,29 +1,53 @@
-#!/usr/bin/env python3
-# coding: utf-8
-# pip3 install requests
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+#
+# author        : JV-conseil
+# credits       : JV-conseil
+# copyright     : Copyright (c) 2019-2024 JV-conseil
+#                 All rights reserved
+# ====================================================
 
 import json
-import requests
 import re
 
+import requests
 
-class ScrapRadioFrance():
+
+class ScrapRadioFrance:
     """
     Les nouveaux flux web audio Hifi HD
     au format .aac des stations de Radio France
+
+    Usage
+    -----
+
+    ```py
+    from utils import ScrapRadioFrance
+
+    s = ScrapRadioFrance()
+    s.run()
+    ```
     """
 
     def __init__(self, pages=[], regex={}, filename="radio-france-aac"):
-        self.pages = pages if pages else [
-            "https://www.franceculture.fr",
-            "https://www.franceinter.fr",
-            "https://www.francemusique.fr",
-            "https://www.fip.fr"
-        ]
-        self.regex = regex if regex else {  # Regex source: https://regex101.com/r/QzFpaY/1
-            "aac": r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\-hifi\.aac\?id=radiofrance)",
-            "mp3": r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\.mp3\?id=radiofrance)"
-        }
+        self.pages = (
+            pages
+            if pages
+            else [
+                "https://www.franceculture.fr",
+                "https://www.franceinter.fr",
+                "https://www.francemusique.fr",
+                "https://www.fip.fr",
+            ]
+        )
+        self.regex = (
+            regex
+            if regex
+            else {  # Regex source: https://regex101.com/r/QzFpaY/1
+                "aac": r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\-hifi\.aac\?id=radiofrance)",
+                "mp3": r"(?P<link>http[^,\"]*?/(?P<title>[^\.]*?)\.mp3\?id=radiofrance)",
+            }
+        )
         self.links = {k: {} for k, v in self.regex.items()}
         self.filename = filename
 
@@ -42,7 +66,10 @@ class ScrapRadioFrance():
             json.dump(self.links, f, ensure_ascii=False)
             f.close()
 
-        print("\r\n# JSON View\r\n\r\n%s" % json.dumps(self.links, indent=2, ensure_ascii=False))
+        print(
+            "\r\n# JSON View\r\n\r\n%s"
+            % json.dumps(self.links, indent=2, ensure_ascii=False)
+        )
 
         # Markdown View
         md = "# Markdown View"
@@ -59,7 +86,7 @@ class ScrapRadioFrance():
         # M3U View
         m3u8 = "#EXTM3U\r\n"
         for x, y in self.links["aac"].items():
-            m3u8 += ("#EXTINF:0,Radio France HiFi - %s\r\n%s\r\n" % (x, y))
+            m3u8 += "#EXTINF:0,Radio France HiFi - %s\r\n%s\r\n" % (x, y)
 
         with open("output/%s.m3u8" % self.filename, "w", encoding="UTF-8") as f:
             f.write(m3u8)

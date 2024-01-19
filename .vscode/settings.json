@@ -1,0 +1,25 @@
+{
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.rulers": [
+      88
+    ]
+  },
+  "editor.bracketPairColorization.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.matchBrackets": "always",
+  "editor.wordWrap": "on",
+  "python.languageServer": "Default",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.terminal.activateEnvironment": false,
+  "task.allowAutomaticTasks": "on",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.defaultProfile.windows": "bash",
+}

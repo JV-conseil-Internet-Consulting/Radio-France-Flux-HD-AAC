@@ -1,1 +1,1 @@
-from .utils import ScrapRadioFrance
+from .ScrapRadioFrance import ScrapRadioFrance
