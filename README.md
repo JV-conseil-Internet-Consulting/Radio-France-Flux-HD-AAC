@@ -22,28 +22,28 @@ Bits par échantillon : 32
 
 ## France Musique
 
-- [francemusiqueeasyclassique](https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance)
-- [francemusiqueopera](https://icecast.radiofrance.fr/francemusiqueopera-hifi.aac?id=radiofrance)
-- [francemusiquebaroque](https://icecast.radiofrance.fr/francemusiquebaroque-hifi.aac?id=radiofrance)
-- [francemusiqueclassiqueplus](https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance)
-- [francemusiqueconcertsradiofrance](https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance)
-- [francemusiquelajazz](https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance)
-- [francemusiquelacontemporaine](https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance)
-- [francemusiqueocoramonde](https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance)
-- [francemusiquelabo](https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance)
-- [francemusique](https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance)
+1. [francemusique](https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance)
+2. [francemusiquebaroque](https://icecast.radiofrance.fr/francemusiquebaroque-hifi.aac?id=radiofrance)
+3. [francemusiqueclassiqueplus](https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac?id=radiofrance)
+4. [francemusiqueconcertsradiofrance](https://icecast.radiofrance.fr/francemusiqueconcertsradiofrance-hifi.aac?id=radiofrance)
+5. [francemusiqueeasyclassique](https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance)
+6. [francemusiquelabo](https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance)
+7. [francemusiquelacontemporaine](https://icecast.radiofrance.fr/francemusiquelacontemporaine-hifi.aac?id=radiofrance)
+8. [francemusiquelajazz](https://icecast.radiofrance.fr/francemusiquelajazz-hifi.aac?id=radiofrance)
+9. [francemusiqueocoramonde](https://icecast.radiofrance.fr/francemusiqueocoramonde-hifi.aac?id=radiofrance)
+10. [francemusiqueopera](https://icecast.radiofrance.fr/francemusiqueopera-hifi.aac?id=radiofrance)
 
 ## FiP
 
-- [fiprock](https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance)
-- [fipjazz](https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance)
-- [fipgroove](https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance)
-- [fippop](https://icecast.radiofrance.fr/fippop-hifi.aac?id=radiofrance)
-- [fipelectro](https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance)
-- [fipworld](https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance)
-- [fipreggae](https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance)
-- [fipnouveautes](https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance)
-- [fip](https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance)
+1. [fip](https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance)
+2. [fipelectro](https://icecast.radiofrance.fr/fipelectro-hifi.aac?id=radiofrance)
+3. [fipgroove](https://icecast.radiofrance.fr/fipgroove-hifi.aac?id=radiofrance)
+4. [fipjazz](https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance)
+5. [fipnouveautes](https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance)
+6. [fippop](https://icecast.radiofrance.fr/fippop-hifi.aac?id=radiofrance)
+7. [fipreggae](https://icecast.radiofrance.fr/fipreggae-hifi.aac?id=radiofrance)
+8. [fiprock](https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance)
+9. [fipworld](https://icecast.radiofrance.fr/fipworld-hifi.aac?id=radiofrance)
 
 ## France Culture, France Inter
 
@@ -70,7 +70,7 @@ Bits par échantillon : 32
 # author        : JV-conseil
 # credits       : JV-conseil
 # licence       : BSD 3-Clause License
-# copyright     : Copyright (c) 2019-2023 JV-conseil
+# copyright     : Copyright (c) 2019-2024 JV-conseil
 #                 All rights reserved
 #====================================================
 
