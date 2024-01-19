@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Les nouveaux flux web audio Hifi HD au format .aac des stations de Radio France">
     <meta name="author" content="JV conseil - Internet Consulting">
     <title>Les nouveaux flux web audio Hifi HD au format .aac des stations de Radio France</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net/">
+    <link rel="dns-prefetch" href="//code.jquery.com/">
+    <link rel="dns-prefetch" href="//icecast.radiofrance.fr/">
+    <link rel="dns-prefetch" href="//raw.githubusercontent.com/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="jumbotron">
         <div class="container">
@@ -16,23 +23,34 @@
             <ul class="list-group"></ul>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
     <script>
-    $(document).ready(function () {
-        $.getJSON('https://raw.githubusercontent.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/master/output/radio-france-aac.json', function (data) {
-            // console.log(data)
-            let cards = ''
-            const n = data.aac.length
-            $.each(data.aac, function (title, uri) {
-                // console.log(uri)
-                cards += '<li class="list-group-item d-flex justify-content-between align-items-center"><b>' + title + '</b> <audio preload="true" controls="controls"><source src="' + uri + '"></audio></li>'
+        $(document).ready(function () {
+            $.getJSON('https://raw.githubusercontent.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/master/output/radio-france-aac.json', function (data) {
+                // console.log(data)
+                let cards = ''
+                const n = data.aac.length
+                $.each(data.aac, function (title, uri) {
+                    // console.log(uri)
+                    cards += '<li class="list-group-item d-flex justify-content-between align-items-center"><b>' + title + '</b>\
+                        <audio controls="controls">\
+                            <source src="' + uri + '">\
+                            <p>Votre navigateur ne prend pas en charge l\'audio HTML5. Voici un < a href = "' + uri + '" > lien vers le\
+                                    fichier audio</a > à la place.\
+                            </p >\
+                        </audio >\
+                    </li > '
+                })
+                $('.list-group').html(cards)
+            }).fail(function () {
+                console.log('An error has occurred.')
             })
-            $('.list-group').html(cards)
-        }).fail(function () {
-            console.log('An error has occurred.')
         })
-    })
     </script>
 </body>
+
 </html>
