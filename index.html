@@ -37,8 +37,8 @@
                 $.each(data.aac, function (title, uri) {
                     // console.log(uri)
                     cards += '<li class="list-group-item d-flex justify-content-between align-items-center"><b>' + title + '</b>\
-                        <audio controls="controls">\
-                            <source src="' + uri + '">\
+                        <audio controls="controls" preload="metadata">\
+                            <source src="' + uri + '" type="audio/aac">\
                             <p>Votre navigateur ne prend pas en charge l\'audio HTML5. Voici un < a href = "' + uri + '" > lien vers le\
                                     fichier audio</a > à la place.\
                             </p >\
