@@ -9,8 +9,6 @@
 [![Follow JVconseil on Mastodon](https://img.shields.io/mastodon/follow/109896584320509054?domain=https%3A%2F%2Ffosstodon.org)](https://fosstodon.org/@JVconseil "Follow JVconseil@fosstodon.org on Mastodon")
 [![Follow JV conseil on GitHub](https://img.shields.io/github/followers/JV-conseil?label=JV-conseil&style=social)](https://github.com/JV-conseil "Follow JV-conseil on GitHub")
 
-
-
 ![Les Stations de Radio France](https://www.jv-conseil.net/assets/posts/2020-10-16-radio-france-flux-hd-aac.jpg "Les Stations de Radio France")
 
 ![Radio-France-Flux-HD-AAC-2](https://user-images.githubusercontent.com/8126807/67148713-d72a2d00-f2a2-11e9-8050-83de5ed8c15f.png)
@@ -22,7 +20,7 @@ Fréquence d'échantillonnage : 48000 Hz
 Bits par échantillon : 32
 ```
 
-## France Musique :
+## France Musique
 
 - [francemusiqueeasyclassique](https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac?id=radiofrance)
 - [francemusiqueopera](https://icecast.radiofrance.fr/francemusiqueopera-hifi.aac?id=radiofrance)
@@ -35,7 +33,7 @@ Bits par échantillon : 32
 - [francemusiquelabo](https://icecast.radiofrance.fr/francemusiquelabo-hifi.aac?id=radiofrance)
 - [francemusique](https://icecast.radiofrance.fr/francemusique-hifi.aac?id=radiofrance)
 
-## FiP :
+## FiP
 
 - [fiprock](https://icecast.radiofrance.fr/fiprock-hifi.aac?id=radiofrance)
 - [fipjazz](https://icecast.radiofrance.fr/fipjazz-hifi.aac?id=radiofrance)
@@ -47,7 +45,7 @@ Bits par échantillon : 32
 - [fipnouveautes](https://icecast.radiofrance.fr/fipnouveautes-hifi.aac?id=radiofrance)
 - [fip](https://icecast.radiofrance.fr/fip-hifi.aac?id=radiofrance)
 
-## France Culture, France Inter...
+## France Culture, France Inter
 
 - [franceculture](https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance)
 - [franceinter](https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance)
@@ -58,7 +56,7 @@ Bits par échantillon : 32
 
 ![itunes-export-playlist](https://user-images.githubusercontent.com/8126807/67147939-06886c00-f29a-11e9-85a9-1b902c30ef73.jpg)
 
-#### Télécharger le fichier et retirer le suffixe `.txt` du nom du fichier avant importation:
+#### Télécharger le fichier et retirer le suffixe `.txt` du nom du fichier avant importation
 
 - [Radio France AAC.xml.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746923/Radio.France.AAC.xml.TXT)
 - [Radio France AAC.m3u8.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746929/Radio.France.AAC.m3u8.TXT)
@@ -188,7 +186,12 @@ print()
 
 ## Open API de Radio France
 
-> L’Open API de Radio France est un portail qui permet à des acteurs innovants de développer de nouveaux services grâce à un accès raisonné aux contenus de Radio France — https://www.radiofrance.fr/lopen-api-radio-france
+> L’Open API de Radio France est un portail qui permet à des acteurs innovants de développer de nouveaux services grâce à un accès raisonné aux contenus de Radio France — <https://www.radiofrance.fr/lopen-api-radio-france>
+
+Documentation
+
+- [Liste des webradios de la marque FIP](https://developers.radiofrance.fr/doc/tutorial-by-example/list-locals-and-webradios)
+- [Les technologies qui composent l'Open API et son environnement](https://developers.radiofrance.fr/doc/technologies#les-technologies-qui-composent-lopen-api-et-son-environnement)
 
 ## Sponsorship
 
