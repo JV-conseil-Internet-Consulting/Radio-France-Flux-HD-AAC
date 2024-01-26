@@ -50,7 +50,7 @@ Bits par échantillon : 32
 - [franceculture](https://icecast.radiofrance.fr/franceculture-hifi.aac?id=radiofrance)
 - [franceinter](https://icecast.radiofrance.fr/franceinter-hifi.aac?id=radiofrance)
 
-# iTunes Playlist Import/Export in XML format
+## iTunes Playlist Import/Export in XML format
 
 `Fichier > Bibliothèque > Exporter la playlist... > Format XML`
 
@@ -61,7 +61,7 @@ Bits par échantillon : 32
 - [Radio France AAC.xml.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746923/Radio.France.AAC.xml.TXT)
 - [Radio France AAC.m3u8.TXT](https://github.com/JV-conseil-Internet-Consulting/Radio-France-Flux-HD-AAC/files/3746929/Radio.France.AAC.m3u8.TXT)
 
-# Python Web Scraping
+## Python Web Scraping
 
 ```py
 #!/usr/bin/env bash
