@@ -184,6 +184,52 @@ print()
 }
 ```
 
+## Icecast, ICY
+
+```bash
+#!/usr/bin/env bash
+# -*- coding: UTF-8 -*-
+#
+# author        : JV-conseil
+# credits       : JV-conseil
+# copyright     : Copyright (c) 2019-2024 JV-conseil
+#                 All rights reserved
+#====================================================
+
+cat <<EOF
+| attempt | icy-pub | wait |
+| :------ | :-----: | ---: |
+EOF
+for i in {0..10}; do
+  wait=$(("${i}" * 10))
+  sleep "${wait}"
+  tmp="$(curl -sI "http://icecast.radiofrance.fr/franceinter-hifi.aac?icy-pub=0" | grep -o "icy-pub: [0-1]")"
+  printf "| %d      | %s |   %d sec. |\n" "${i}" "${tmp}" "${wait}"
+done
+```
+
+`icy-pub=0` ne désactivera pas les publicités, le paramètre passé dans l'url n'a aucun effet sur la valeur retournée par les en-têtes du serveur.
+
+Le tableau ci-dessous produit par le script ci-dessus démontre que sur 10 tentatives espacées d'un temps d'attente augmenté d'un facteur de 10 secondes entre chacune, l'activation / désactivation de `icy-pub` apparaît alléatoire 👇
+
+| attempt | icy-pub    |     wait |
+| :------ | :--------- | -------: |
+| 0       | icy-pub: 1 |   0 sec. |
+| 1       | icy-pub: 1 |  10 sec. |
+| 2       | icy-pub: 1 |  20 sec. |
+| 3       | icy-pub: 1 |  30 sec. |
+| 4       | icy-pub: 0 |  40 sec. |
+| 5       | icy-pub: 0 |  50 sec. |
+| 6       | icy-pub: 0 |  60 sec. |
+| 7       | icy-pub: 1 |  70 sec. |
+| 8       | icy-pub: 1 |  80 sec. |
+| 9       | icy-pub: 0 |  90 sec. |
+| 10      | icy-pub: 1 | 100 sec. |
+
+Pour aller plus loin documentation sur le protocole [Icecast](https://cast.readme.io/docs/icecast) 🔗
+
+NB: Essayer de changer `icy-br=320` n'a pas plus d'effets et ne bascule pas l'encodage de 192 à 320 Kbps, standard d'écoute disponible sur la BBC depuis déjà plusieurs années 🔉
+
 ## Open API de Radio France
 
 > L’Open API de Radio France est un portail qui permet à des acteurs innovants de développer de nouveaux services grâce à un accès raisonné aux contenus de Radio France — <https://www.radiofrance.fr/lopen-api-radio-france>
