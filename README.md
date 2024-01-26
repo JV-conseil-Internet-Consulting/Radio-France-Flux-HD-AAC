@@ -210,7 +210,7 @@ done
 
 `icy-pub=0` ne désactivera pas les publicités, le paramètre passé dans l'url n'a aucun effet sur la valeur retournée par les en-têtes du serveur.
 
-Le tableau ci-dessous produit par le script ci-dessus démontre que sur 10 tentatives espacées d'un temps d'attente augmenté d'un facteur de 10 secondes entre chacune, l'activation / désactivation de `icy-pub` apparaît alléatoire 👇
+Le tableau ci-dessous produit par le script ci-dessus démontre que sur 10 tentatives espacées d'un temps d'attente augmenté d'un facteur de 10 secondes entre chacune, l'activation / désactivation de `icy-pub` apparaît aléatoire 👇
 
 | attempt | icy-pub    |     wait |
 | :------ | :--------- | -------: |
